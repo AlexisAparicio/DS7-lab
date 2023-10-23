@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Laboratorio 5.1</title>
+    </head>
+    <body>
+    Ejemplo de subida de archivo al servidor web
+    <br/><br/>
+    <form action="lab5.1.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="nombre_archivo_cliente"/><br/><br/>
+        <input type="submit" name="enviar" value="Enviar"/>
+    </form>
+    </body>
+    <!-- <script language="javascript">
+        $("#boton_comprobar").on('click', function(){
+            var fichero = $('#mi_imagen')[0].files[0];
+            var peso = fichero.size;
+            console.log(peso);
+            if (peso > 1048576) {
+                alert ("El fichero es muy grande");
+            } else {
+                $("#formulario").submit();
+            }
+        }); -->
+    </script>
+</html>

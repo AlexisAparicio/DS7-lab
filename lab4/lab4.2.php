@@ -1,36 +1,14 @@
 <?php
     $porcentaje = $_POST['porcentaje'];
-    if($porcentaje>80){
-        echo "Las ventas estan al ".$porcentaje."%";
-        echo "<BR>";
-        echo '<img src="../lab4/good.PNG"';
-        echo "<BR>";
+
+    function obtieneFactorial($numero){
+        $factorial = 1;
+        for ($i = 1; $i <= $numero; $i++){
+          $factorial = $factorial * $i;
         }
-        elseif($porcentaje>=50&& $porcentaje<=79) {
-        echo ("Las ventas estan al ".$porcentaje."%");
-        echo "<BR>";
-        echo ('<img src="../lab4/mid.PNG"');
-        echo "<BR>";
-        }
-        else
-        {
-            echo ("Las ventas estan al ".$porcentaje."%");
-            echo "<BR>";
-            echo ('<img src="../lab4/bad.PNG"');
-            echo "<BR>";
-        }
+        return $factorial; 
+    }
+
+    $resultado = obtieneFactorial($porcentaje);
+    echo "Factorial de $porcentaje  = $resultado";
 ?>
-
-<!-- if($porcentaje<80){
-        echo ("Las ventas estan al ".$porcentaje."%");
-        //echo ('<img src="../lab4/good.PNG"');
-        }
-            else{($porcentaje>=50 && $porcentaje<=79)
-
-            echo ("Las ventas estan al ".$porcentaje."%");
-            //echo ('<img src="../lab4/mid.PNG"');
-        }
-            else{
-                echo ("Las ventas estan al ".$porcentaje."%");
-              //  echo ('<img src="../lab4/bad.PNG"');
-            } -->
