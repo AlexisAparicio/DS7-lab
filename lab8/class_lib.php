@@ -102,13 +102,19 @@ class Cilindro{
 class Factorial
     {
         protected $porc;
-    
+        
         function __construct ($p){
             $this->porcentaje =$p;
+            $this->i=1;
+            $this->factorial=1;
         }
     
-        function obtieneFactorial(){
-            return $p;
+        function obtieneFactorial()
+        {
+            for ($j=1;$j<=$this->porcentaje;$this->i++){
+                $this->factorial=$this->factorial*$j;
+            }
+            return $this->factorial;
         }
     }
 ?>

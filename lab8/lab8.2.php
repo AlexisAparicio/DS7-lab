@@ -1,5 +1,8 @@
 <?php
+    include "class_lib.php";
+
     $porcentaje = $_POST['porcentaje'];
+
     if($porcentaje>80){
         echo "Las ventas estan al ".$porcentaje."%";
         echo "<BR>";

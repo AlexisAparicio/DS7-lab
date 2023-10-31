@@ -6,7 +6,7 @@
         for ($i = 1; $i <= $numero; $i++){
           $factorial = $factorial * $i;
         }
-        return $factorial; 
+        return $factorial;
     }
 
     $resultado = obtieneFactorial($porcentaje);
