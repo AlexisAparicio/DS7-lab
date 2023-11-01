@@ -101,8 +101,6 @@ class Cilindro{
 
 class Factorial
     {
-        protected $porc;
-        
         function __construct ($p){
             $this->porcentaje =$p;
             $this->i=1;
@@ -111,10 +109,38 @@ class Factorial
     
         function obtieneFactorial()
         {
-            for ($j=1;$j<=$this->porcentaje;$this->i++){
-                $this->factorial=$this->factorial*$j;
+            for ($j = 1; $j <= $this->porcentaje; $j++) 
+            {
+                $this->factorial = $this->factorial * $j;
             }
             return $this->factorial;
         }
     }
+
+    class Calificacion
+        {   protected $porcentaje;
+            protected $good;
+            protected $mid;
+            protected $bad;
+
+        function __construct($p)
+        {
+            $this->porcentaje = $p;
+            $this->good = "Buen resultado";
+            $this->mid = "Resultado medio";
+            $this->bad = "Resultado malo";
+        }
+    
+        function Evaluacion()
+        {
+            if ($this->porcentaje > 80) {
+                return $this->good;
+            } elseif ($this->porcentaje >= 50 && $this->porcentaje <= 79) {
+                return $this->mid;
+            } else {
+                return $this->bad;
+            }
+        }
+    }
+
 ?>

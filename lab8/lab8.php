@@ -2,6 +2,7 @@
     include "class_lib.php";
 
     $porcentaje = $_POST['porcentaje'];
+    
 
     $fact=new Factorial($porcentaje);
 
