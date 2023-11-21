@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 15.9</title>
+    <!-- Agrega la referencia a jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Ejemplo jQuery - Eventos</h1>
+    <a href="javascript:void(0);" id="prueba">Prueba</a>
+
+    <script type="text/javascript">
+        // Espera a que el documento esté listo
+        $(document).ready(function() {
+            // Asocia el evento de clic a los elementos 'a' y 'span'
+            $("#prueba").on("click", function() {
+                alert("Hola mundo desde jQuery");
+            });
+        });
+    </script>
+</body>
+</html>
